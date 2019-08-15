@@ -1,0 +1,56 @@
+@import "../../../global";
+
+// bulmaの変数
+$navbar-background-color: $background-color;
+$navbar-item-color : $color;
+$navbar-item-hover-color: $color;
+$navbar-item-hover-background-color: $hover-background-color;
+$navbar-item-active-color: $active-color;
+$navbar-dropdown-background-color: $background-color;
+$navbar-dropdown-item-hover-color: $hover-color;
+$navbar-dropdown-item-hover-background-color: $hover-background-color;
+$navbar-dropdown-item-active-color: $active-color;
+$navbar-dropdown-item-active-background-color: $active-background-color;
+
+@import "~bulma/sass/utilities/_all.sass";
+@import "~bulma/sass/components/navbar";
+
+.navbar {
+  @extend .navbar;
+}
+
+.navbar-brand {
+  @extend .navbar-brand;
+}
+
+.navbar-item {
+  @extend .navbar-item;
+  img {
+    max-height: 5rem;
+  }
+}
+
+.navbar-menu {
+  @extend .navbar-menu;
+}
+
+.navbar-start {
+  @extend .navbar-start;
+}
+
+.navbar-end {
+  @extend .navbar-end;
+}
+
+.navbar-link {
+  @extend .navbar-link;
+}
+
+.has-dropdown {
+  @extend .has-dropdown;
+}
+
+.is-hoverable {
+  @extend .is-hoverable;
+}
+

@@ -1,0 +1,26 @@
+@import "../../../global";
+
+// bulmaの変数
+$table-background-color: #FAFAFA;
+$table-row-active-background-color: $hover-background-color;
+$table-striped-row-even-background-color:#F7F7F7;
+
+@import "~bulma/sass/utilities/_all.sass";
+@import "~bulma/sass/elements/table";
+
+.table {
+  @extend .table;
+  &.is-hoverable {
+    @extend .is-hoverable;
+  }
+  &.is-fullwidth {
+    @extend .is-fullwidth;
+  }
+  &.is-striped {
+    @extend .is-striped;
+  }
+}
+
+.is-selected {
+  @extend .is-selected;
+}

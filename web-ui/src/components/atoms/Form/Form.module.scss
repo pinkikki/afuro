@@ -1,0 +1,37 @@
+@import "~bulma/sass/utilities/_all.sass";
+@import "~bulma/sass/elements/form.sass";
+@import "~bulma/sass/elements/button.sass";
+
+
+.input {
+  @extend input
+}
+
+.button {
+  @extend .button;
+
+  &.is-primary {
+    @extend .is-primary;
+    background-color: #7dbeff;
+    &:hover {
+      background-color: #6ab9ff;
+    }
+  }
+
+  &.is-warning {
+    @extend .is-warning;
+    background-color: #ffe075;
+    &:hover {
+      background-color: #ffd95d;
+    }
+  }
+
+  &.is-danger {
+    @extend .is-danger;
+    background-color: #ff8d90;
+    &:hover {
+      background-color: #ff6f6f;
+    }
+  }
+}
+
